@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/projects.css">
+</head>
+<body>
+
+<!-- Projects Section -->
+<section class="projects-section">
+    <div class="container">
+        <div class="section-title">
+            <h2>Digital Marketing Projects</h2>
+            <p>Showcasing successful campaigns and strategies</p>
+        </div>
+
+        <div class="projects-grid">
+            <!-- Project 1 - Meesho -->
+            <div class="project-card" data-pdf="assets/project1.pdf">
+                <div class="project-header">
+                    <h3 class="project-title">Email Marketing Strategy for Meesho</h3>
+                    <div class="project-client">BY JEESHAN</div>
+                </div>
+                <div class="project-body">
+                    <p class="project-description">
+                        Comprehensive email marketing strategy with automation flows, segmentation, 
+                        and performance optimization for e-commerce growth using Mailchimp.
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">Email Marketing</span>
+                        <span class="project-tag">Mailchimp</span>
+                        <span class="project-tag">Automation</span>
+                        <span class="project-tag">E-commerce</span>
+                    </div>
+                </div>
+                <div class="project-footer">
+                    <span class="project-type">Strategy Project</span>
+                    <button class="view-project-btn">
+                        <i class="fas fa-eye"></i> View Project
+                    </button>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card" data-pdf="assets/project2.pdf">
+                <div class="project-header">
+                    <h3 class="project-title">Google Ads Campaign Strategy for Xiaomi</h3>
+                    <div class="project-client">Smartphone Sale Campaign</div>
+                </div>
+                <div class="project-body">
+                    <p class="project-description">
+                        Complete Google Ads strategy for Xiaomi smartphone launch including 
+                        search campaigns, display ads, and performance analytics.
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">Google Ads</span>
+                        <span class="project-tag">Google Analytics</span>
+                        <span class="project-tag">PPC</span>
+                        <span class="project-tag">ROI Optimization</span>
+                    </div>
+                </div>
+                <div class="project-footer">
+                    <span class="project-type">Client Project</span>
+                    <button class="view-project-btn">
+                        <i class="fas fa-eye"></i> View Project
+                    </button>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card" data-pdf="assets/project3.pdf">
+                <div class="project-header">
+                    <h3 class="project-title">Google Display Ads Campaign for Aesthetic Spa</h3>
+                    <div class="project-client">Medical Spa, Sacramento</div>
+                </div>
+                <div class="project-body">
+                    <p class="project-description">
+                        Targeted display advertising campaign for medical spa services with 
+                        audience targeting and creative optimization.
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">Display Ads</span>
+                        <span class="project-tag">Audience Targeting</span>
+                        <span class="project-tag">Creative Design</span>
+                        <span class="project-tag">CTR Optimization</span>
+                    </div>
+                </div>
+                <div class="project-footer">
+                    <span class="project-type">Simulated Project</span>
+                    <button class="view-project-btn">
+                        <i class="fas fa-eye"></i> View Project
+                    </button>
+                </div>
+            </div>
+
+            <!-- Project 4 - Integrated Campaign -->
+            <div class="project-card" data-pdf="projects/integrated-email-whatsapp.pdf">
+                <div class="project-header">
+                    <h3 class="project-title">Integrated Email & WhatsApp Marketing Campaign</h3>
+                    <div class="project-client">Cross-Channel Strategy</div>
+                </div>
+                <div class="project-body">
+                    <p class="project-description">
+                        Cross-channel campaign combining email and WhatsApp marketing for 
+                        enhanced customer engagement and higher conversion rates.
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">WhatsApp Marketing</span>
+                        <span class="project-tag">Multi-Channel</span>
+                        <span class="project-tag">Customer Engagement</span>
+                        <span class="project-tag">Automation</span>
+                    </div>
+                </div>
+                <div class="project-footer">
+                    <span class="project-type">Tech Mentorship Program</span>
+                    <button class="view-project-btn">
+                        <i class="fas fa-eye"></i> View Project
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PDF Modal -->
+<div id="pdfModal" class="pdf-modal">
+    <div class="pdf-modal-content">
+        <div class="pdf-modal-header">
+            <h3 class="pdf-modal-title" id="pdfTitle">Project Document</h3>
+            <button class="close-modal">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <iframe id="pdfViewer" class="pdf-viewer" src=""></iframe>
+    </div>
+</div>
+
+<script src="js/projects.js"></script>
+</body>
+</html>
