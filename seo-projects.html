@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Marketing Projects</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <div id="header-placeholder"></div>
+
+  <!-- Projects Section -->
+  <section class="projects">
+    <div class="container">
+      <div class="section-title">
+        <h2>Our Digital Marketing Projects</h2>
+        <p>See how we've helped businesses achieve remarkable results</p>
+      </div>
+
+      <div class="projects-row">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <a href="project1-details.html" target="_blank">
+            <img src="assets/Ajay.png"alt="SEO Campaign Project" class="project-image">
+          </a>
+          <h3>SEO Campaign</h3>
+        
+          <a href="ajay2.html" target="_blank" class="read-more">Read More</a>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <a href="project2-details.html" target="_blank">
+            <img src="assets/pipe.png" alt="Social Media Campaign Project" class="project-image">
+          </a>
+        <h3>SEO Campaign</h3>
+          
+          <a href="project2-details.html" target="_blank" class="read-more">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+
+  <!-- JS to load header/footer and make image clickable -->
+  <script>
+    // Load header
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('header-placeholder').innerHTML = data);
+
+    // Load footer
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+
+    // Make image clickable like Read More
+    document.querySelectorAll('.project-image').forEach(img => {
+      img.addEventListener('click', () => {
+        const link = img.closest('.project-card').querySelector('.read-more').href;
+        window.open(link, '_blank');
+      });
+    });
+  </script>
+
+</body>
+</html>
